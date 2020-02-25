@@ -1,0 +1,20 @@
+$date
+    Feb 11, 2012 08:01:56
+$end
+
+$timescale
+	 1us
+$end
+
+$scope module EVENT $end
+$timescale
+	 1us
+$end
+
+$scope module EVENT $end
+$upscope $end
+
+$enddefinitions $end
+#0
+$dumpvars
+$end

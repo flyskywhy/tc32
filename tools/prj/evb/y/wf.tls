@@ -1,0 +1,63 @@
+///////////////////////////////////////////////////
+// type: 1 for byte; 2 for short; 4 for word
+//
+//	a=p_rd_reg	(adr, type)
+//	a=p_rd_mem	(adr, offset, len)
+//	a=p_rd_fifo	(adr, offset, len)
+//	a=p_wr_reg	(adr, dat, type)
+//	a=p_wr_mem	(adr, offset, len)
+//	a=p_wr_fifo	(adr, offset, len)
+//	a=p_get_buf	(index, type)		# get data indexed at working buffer
+//	a=p_set_buf	(index, dat, type)	# set data indexed at working buffer
+//	a=p_ld_buf	(offset, len)
+//	a=p_dis_buf	(offset, len)
+//	a=p_get_adr	(offset, type)		# return address argument
+//	a=p_get_size	(offset, type)		# return size argument
+///////////////////////////////////////////////////
+
+t0 = tick (1)
+
+s = p_get_size (0, 4)
+a = p_get_adr  (0, 4)
+n = 256				//spi flash program based on page size 256
+off = 0
+
+v = wr_reg (0x602, 0x05, 1)	// reset mcu
+v = wr_reg (0x0d, 0x01, 1)	// set csn high
+
+
+
+while (n>0)
+	v = wr_reg (0x0d, 0x00, 1)	// set csn low
+	v = wr_reg (0x0c, 0x06, 1)	// send write enable command
+	v = wr_reg (0x0d, 0x01, 1)	// set csn high
+
+	v = wr_reg (0x0d, 0x00, 1)	// set csn low
+	v = wr_reg (0x0c, 0x02, 1)	// send write command
+
+	a2 = a >> 16 			
+	v = wr_reg (0x0c, a2, 1)	// send a2
+	a1 = and (a >> 8, 0xff)  
+	v = wr_reg (0x0c, a1, 1)	// send a1
+	a0 = and (a, 0xff)
+	v = wr_reg (0x0c, a0, 1)	// send a0
+
+	t = p_ld_buf (off, n)		// read n byte from input
+	v = wr_fifo (0x0c, off, t)
+	w = w + t
+	a = a + n
+
+	if (t < n) then			// last page
+		n = 0
+	endif
+
+	t1 = tick (1)
+	v = wr_reg (0x0d, 0x01, 1)	// set csn high
+	v = wr_reg (0x0d, 0x01, 1)	// set csn high
+	while (tick(1) - t1 < 2)
+	wend
+wend
+
+t = tick(1) - t0
+print "write ", w, " bytes\r\n"
+print "total time: ", t, "ms"

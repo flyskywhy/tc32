@@ -1,0 +1,84 @@
+///////////////////////////////////////////////////
+// type: 1 for byte; 2 for short; 4 for word
+//
+//	a=p_rd_reg	(adr, type)
+//	a=p_rd_mem	(adr, offset, len)
+//	a=p_rd_fifo	(adr, offset, len)
+//	a=p_wr_reg	(adr, dat, type)
+//	a=p_wr_mem	(adr, offset, len)
+//	a=p_wr_fifo	(adr, offset, len)
+//	a=p_get_buf	(index, type)		# buf[index]
+//	a=p_set_buf	(index, dat, type)	# buf[index] = dat
+//	a=p_ld_buf	(offset, len)
+//	a=p_dis_buf	(offset, len)
+//	a=p_get_adr	(offset, type)		# return address argument
+//	a=p_get_size	(offset, type)		# return size argument
+//	printx value, number_of_byte, char	# char: 32(' ') 9('\t') 10 ('\n')
+//	a=getc (blocking)			# get char, 0 for non-blocking
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////// 
+// subroutine
+///////////////////////////////////////////////////////////////////////////////////////// 
+sub wr_mem (a, offset, size)
+	i2c_ah = a >> 8
+	i2c_al = and (a, 0xff)
+	//i2c_v = p_wr_reg (0x01, 0x5c, 1)
+	i2c_v = p_wr_reg (0x03, 0x02, 1)	// I2C master mode
+	i2c_v = p_wr_reg (0x04, i2c_ah, 1)	// address high byte
+	i2c_v = p_wr_reg (0x05, i2c_al, 1)	// address low byte
+	i2c_v = p_wr_reg (0x07, 0x17, 1)	// send start-id-ah-al
+	for i2c_i=0 to size-1
+		i2c_d = p_get_buf (offset+i2c_i, 1)
+		i2c_v = p_wr_reg (0x06, i2c_d, 1)
+		i2c_v = p_wr_reg (0x07, 0x08, 1)	//send data
+	next i2c_i
+
+	i2c_v = p_wr_reg (0x07, 0x20, 2)		// send stop bit
+end sub
+
+sub wr_reg (a, offset, size)
+	i2c_v = wr_mem (a, offset, size)
+	return size
+end sub
+
+sub wr_fifo (a, offset, size)
+	i2c_v = wr_mem (0x03, 0x00, 1)  // fifo mode
+	i2c_v = wr_mem (a, offset, size)
+	i2c_v = wr_mem (0x03, 0x01, 1)  // ram mode
+	return size
+end sub
+
+///////////////////////////////////////////////////////////////////////
+//   Read
+///////////////////////////////////////////////////////////////////////
+
+sub rd_mem (a, offset, size)
+	wr_mem (a, offset, 0)
+	i2c_v = p_wr_reg (0x07, 0x59, 1)	// send start-id_read-read
+	for i2c_ii=0 to size-1
+		i2c_v = p_rd_mem (0x06, offset + i2c_ii, 1)
+		i2c_v = p_wr_reg (0x07, 0x48, 1)
+	next i2c_ii
+	i2c_v = p_wr_reg (0x07, 0xa8, 1)
+	return size
+end sub
+
+sub rd_reg (a, offset, size)
+	i2c_v = rd_mem (a, offset, size)
+	return size
+end sub
+
+sub rd_fifo (a, offset, size)
+	wr_mem (a, offset, 0)
+	i2c_v = wr_mem (0x03, 0x00, 1)  // fifo mode
+	i2c_v = p_wr_reg (0x07, 0x59, 1)	// send start-id_read-read
+	for i2c_ii=0 to size-1
+		i2c_v = p_rd_mem (0x06, offset + i2c_ii, 1)
+		i2c_v = p_wr_reg (0x07, 0x08, 1)
+	next i2c_ii
+	i2c_v = p_wr_reg (0x07, 0xa8, 1)
+	i2c_v = wr_mem (0x03, 0x01, 1)  // ram mode
+	return size
+end sub
+
