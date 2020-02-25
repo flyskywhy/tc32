@@ -1,7 +1,7 @@
-This is binutils.info, produced by makeinfo version 4.13 from
-../../../../binutils-2.20/binutils/doc/binutils.texi.
+This is binutils.info, produced by makeinfo version 4.8 from
+binutils.texi.
 
-Copyright (C) 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
+   Copyright (C) 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free
 Software Foundation, Inc.
 
@@ -545,7 +545,7 @@ object files are listed as arguments, `nm' assumes the file `a.out'.
           same name.  If the symbol is defined anywhere, the common
           symbols are treated as undefined references.  For more
           details on common symbols, see the discussion of -warn-common
-          in *note Linker options: (ld.info)Options.
+          in *Note Linker options: (ld.info)Options.
 
     `D'
     `d'
@@ -622,7 +622,7 @@ object files are listed as arguments, `nm' assumes the file `a.out'.
           this case, the next values printed are the stabs other field,
           the stabs desc field, and the stab type.  Stabs symbols are
           used to hold debugging information.  For more information,
-          see *note Stabs: (stabs.info)Top.
+          see *Note Stabs: (stabs.info)Top.
 
     `?'
           The symbol type is unknown, or object file format specific.
@@ -677,8 +677,8 @@ equivalent.
 
 `--plugin NAME'
      Load the plugin called NAME to add support for extra target types.
-     This option is only available if the toolchain has been built with
-     plugin support enabled.
+     This option is only available if the toolchain has been built
+     with plugin support enabled.
 
 `-l'
 `--line-numbers'
@@ -1806,7 +1806,7 @@ equivalent.  At least one option from the list
      ELF section.  In most other file formats, debugging symbol-table
      entries are interleaved with linkage symbols, and are visible in
      the `--syms' output.  For more information on stabs symbols, see
-     *note Stabs: (stabs.info)Top.
+     *Note Stabs: (stabs.info)Top.
 
 `--start-address=ADDRESS'
      Start displaying data at the specified address.  This affects the
@@ -2569,7 +2569,7 @@ file language used in header files, see the `linkers' section,
 `NLMLINK' in particular, of the `NLM Development and Tools Overview',
 which is part of the NLM Software Developer's Kit ("NLM SDK"),
 available from Novell, Inc.  `nlmconv' uses the GNU Binary File
-Descriptor library to read INFILE; see *note BFD: (ld.info)BFD, for
+Descriptor library to read INFILE; see *Note BFD: (ld.info)BFD, for
 more information.
 
    `nlmconv' can perform a link step.  In other words, you can list
@@ -2691,7 +2691,7 @@ Compiler.
      Specify the BFD format to use for a bin file as output.  This is a
      BFD target name; you can use the `--help' option to see a list of
      supported targets.  Normally `windmc' will use the default format,
-     which is the first one listed by the `--help' option.  *note
+     which is the first one listed by the `--help' option.  *Note
      Target Selection::.
 
 `-h PATH'
@@ -2843,7 +2843,7 @@ available to Windows.
      This is a BFD target name; you can use the `--help' option to see
      a list of supported targets.  Normally `windres' will use the
      default format, which is the first one listed by the `--help'
-     option.  *note Target Selection::.
+     option.  *Note Target Selection::.
 
 `--preprocessor PROGRAM'
      When `windres' reads an `rc' file, it runs it through the C
@@ -4460,34 +4460,34 @@ Binutils Index
 
 
 Tag Table:
-Node: Top1966
-Node: ar3609
-Node: ar cmdline6414
-Node: ar scripts15457
-Node: nm21145
-Node: objcopy30619
-Node: objdump58860
-Node: ranlib79332
-Node: size80153
-Node: strings83158
-Node: strip85616
-Node: c++filt91567
-Ref: c++filt-Footnote-196412
-Node: addr2line96518
-Node: nlmconv99789
-Node: windmc102395
-Node: windres106042
-Node: dlltool112069
-Node: def file format124753
-Node: readelf126491
-Node: Common Options132497
-Node: Selecting the Target System133537
-Node: Target Selection134469
-Node: Architecture Selection136451
-Node: Reporting Bugs137279
-Node: Bug Criteria138058
-Node: Bug Reporting138611
-Node: GNU Free Documentation License145481
-Node: Binutils Index170660
+Node: Top1929
+Node: ar3572
+Node: ar cmdline6377
+Node: ar scripts15420
+Node: nm21108
+Node: objcopy30582
+Node: objdump58823
+Node: ranlib79295
+Node: size80116
+Node: strings83121
+Node: strip85579
+Node: c++filt91530
+Ref: c++filt-Footnote-196375
+Node: addr2line96481
+Node: nlmconv99752
+Node: windmc102358
+Node: windres106005
+Node: dlltool112032
+Node: def file format124716
+Node: readelf126454
+Node: Common Options132460
+Node: Selecting the Target System133500
+Node: Target Selection134432
+Node: Architecture Selection136414
+Node: Reporting Bugs137242
+Node: Bug Criteria138021
+Node: Bug Reporting138574
+Node: GNU Free Documentation License145444
+Node: Binutils Index170623
 
 End Tag Table

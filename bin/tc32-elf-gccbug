@@ -344,12 +344,12 @@ SEND-PR: support             I need help with gcc.
 `[ -n "$ARCH" ] && echo Architecture: $ARCH`
 `[ -n "$MACHINE" ] && echo Machine: $MACHINE`
 	$ENVIRONMENT_C
-host: i686-pc-mingw32
-build: i686-pc-mingw32
+host: x86_64-unknown-linux-gnu
+build: x86_64-unknown-linux-gnu
 target: tc32-unknown-elf
 __EOF__
       cat >> $file << \__EOF__
-configured with: ../../gcc-4.5.1/configure --target=tc32-elf --prefix=/opt/tc32 --disable-nls --disable-shared --disable-threads --with-gcc --with-gnu-ld --with-gnu-as --with-dwarf2 --enable-languages=c --disable-libstdcxx-pch --disable-libmudflap --disable-libgcc --disable-libssp --disable-multilib --disable-bootstrap --with-mpc=/opt/addontools --with-mpfr=/opt/addontools --with-gmp=/opt/addontools
+configured with: ../../gcc-4.5.1/configure --program-prefix=tc32-elf- --target=tc32-elf --prefix=/opt/tc32 --enable-languages=c --libexecdir=/opt/tc32/lib --with-gnu-as --with-gnu-ld --without-headers --disable-decimal-float --disable-nls --disable-mathvec --with-pkgversion='Telink TC32 version 2.0 build' --without-docdir --without-fp --without-tls --disable-shared --disable-threads --disable-libffi --disable-libquadmath --disable-libstdcxx-pch --disable-libmudflap --disable-libgomp --disable-libssp -v --without-docdir --enable-soft-float --with-newlib --with-gcc --with-gnu- --with-gmp=/opt/tc32/addontools --with-mpc=/opt/tc32/addontools --with-mpfr=/opt/tc32/addontools
 __EOF__
       cat >> $file << __EOF__
 >Description:

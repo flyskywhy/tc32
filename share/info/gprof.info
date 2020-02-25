@@ -1,4 +1,4 @@
-This is gprof.info, produced by makeinfo version 4.13 from ../../../binutils-2.20/gprof/gprof.texi.
+This is gprof.info, produced by makeinfo version 4.8 from gprof.texi.
 
 START-INFO-DIR-ENTRY
 * gprof: (gprof).                Profiling your program's execution
@@ -2435,35 +2435,35 @@ permit their use in free software.
 
 
 Tag Table:
-Node: Top761
-Node: Introduction2084
-Node: Compiling4576
-Node: Executing8632
-Node: Invoking11420
-Node: Output Options12835
-Node: Analysis Options19924
-Node: Miscellaneous Options23622
-Node: Deprecated Options24877
-Node: Symspecs26956
-Node: Output28782
-Node: Flat Profile29822
-Node: Call Graph34775
-Node: Primary38007
-Node: Callers40595
-Node: Subroutines42712
-Node: Cycles44553
-Node: Line-by-line51330
-Node: Annotated Source55403
-Node: Inaccuracy58402
-Node: Sampling Error58660
-Node: Assumptions61230
-Node: How do I?62700
-Node: Incompatibilities64254
-Node: Details65748
-Node: Implementation66141
-Node: File Format72038
-Node: Internals76328
-Node: Debugging84823
-Node: GNU Free Documentation License86424
+Node: Top731
+Node: Introduction2054
+Node: Compiling4546
+Node: Executing8602
+Node: Invoking11390
+Node: Output Options12805
+Node: Analysis Options19894
+Node: Miscellaneous Options23592
+Node: Deprecated Options24847
+Node: Symspecs26926
+Node: Output28752
+Node: Flat Profile29792
+Node: Call Graph34745
+Node: Primary37977
+Node: Callers40565
+Node: Subroutines42682
+Node: Cycles44523
+Node: Line-by-line51300
+Node: Annotated Source55373
+Node: Inaccuracy58372
+Node: Sampling Error58630
+Node: Assumptions61200
+Node: How do I?62670
+Node: Incompatibilities64224
+Node: Details65718
+Node: Implementation66111
+Node: File Format72008
+Node: Internals76298
+Node: Debugging84793
+Node: GNU Free Documentation License86394
 
 End Tag Table
