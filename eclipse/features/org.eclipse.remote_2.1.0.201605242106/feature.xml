@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.remote"
+      label="%featureName"
+      version="2.1.0.201605242106"
+      provider-name="%providerName">
+
+   <description url="http://eclipse.org/ptp">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.remote.core"
+         download-size="141"
+         install-size="254"
+         version="2.1.0.201605242106"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.remote.ui"
+         download-size="152"
+         install-size="311"
+         version="2.0.0.201605242106"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.remote.doc.isv"
+         download-size="613"
+         install-size="3551"
+         version="1.0.0.201605242106"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.remote.jsch.core"
+         download-size="91"
+         install-size="196"
+         version="1.0.0.201605242106"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.remote.jsch.ui"
+         download-size="45"
+         install-size="84"
+         version="1.0.0.201605242106"
+         unpack="false"/>
+
+</feature>

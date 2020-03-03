@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.telink.tc32eclipse.debug.gdbjtag.openocd"
+      label="%featureName"
+      version="0.0.1.201610040948"
+      provider-name="%providerName"
+      plugin="com.telink.tc32eclipse.debug.gdbjtag.openocd">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.telink.tc32eclipse.debug.gdbjtag.openocd"
+         download-size="110"
+         install-size="212"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.debug.gdbjtag.restart"
+         download-size="10"
+         install-size="12"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.debug.core"
+         download-size="6"
+         install-size="5"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.core2"
+         download-size="88"
+         install-size="157"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.debug.gdbjtag"
+         download-size="329"
+         install-size="671"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+</feature>

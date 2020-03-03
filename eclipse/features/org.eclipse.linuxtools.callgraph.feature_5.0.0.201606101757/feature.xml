@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.linuxtools.callgraph.feature"
+      label="%featureName"
+      version="5.0.0.201606101757"
+      provider-name="%featureProvider"
+      os="linux">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.cdt.core"/>
+      <import plugin="org.eclipse.cdt.debug.core"/>
+      <import plugin="org.eclipse.cdt.launch"/>
+      <import plugin="org.eclipse.cdt.ui"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.debug.core"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.draw2d"/>
+      <import plugin="org.eclipse.zest.layouts"/>
+      <import plugin="org.eclipse.zest.core"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.linuxtools.profiling.launch"
+         download-size="135"
+         install-size="289"
+         version="3.2.0.201606101757"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.linuxtools.callgraph.core"
+         download-size="59"
+         install-size="101"
+         version="3.0.0.201606101757"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.linuxtools.callgraph"
+         download-size="99"
+         install-size="186"
+         version="2.0.0.201606101757"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.linuxtools.callgraph.launch"
+         download-size="92"
+         install-size="181"
+         version="2.0.0.201606101757"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.linuxtools.callgraph.docs"
+         download-size="433"
+         install-size="486"
+         version="1.0.0.201606101757"
+         unpack="false"/>
+
+</feature>

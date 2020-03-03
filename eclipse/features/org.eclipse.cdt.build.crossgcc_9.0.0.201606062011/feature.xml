@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.cdt.build.crossgcc"
+      label="%featureName"
+      version="9.0.0.201606062011"
+      provider-name="%providerName"
+      plugin="org.eclipse.cdt.build.crossgcc">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.cdt.build.crossgcc"
+         download-size="30"
+         install-size="59"
+         version="1.1.0.201606062011"
+         unpack="false"/>
+
+</feature>

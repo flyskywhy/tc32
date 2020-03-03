@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.cdt.native"
+      label="%featureName"
+      version="9.0.0.201606062011"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.cdt.core.native"
+         download-size="34"
+         install-size="56"
+         version="5.9.0.201606062011"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.aix"
+         os="aix"
+         download-size="25"
+         install-size="60"
+         version="5.4.0.201606062011"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.linux"
+         os="linux"
+         download-size="13"
+         install-size="22"
+         version="5.3.0.201606062011"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.linux.ppc64"
+         os="linux"
+         arch="ppc64"
+         download-size="21"
+         install-size="57"
+         version="5.2.0.201606062011"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.linux.ppc64le"
+         os="linux"
+         arch="ppc64le"
+         download-size="21"
+         install-size="55"
+         version="1.0.0.201606062011"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.linux.x86"
+         os="linux"
+         arch="x86"
+         download-size="18"
+         install-size="36"
+         version="5.3.0.201606062011"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.linux.x86_64"
+         os="linux"
+         arch="x86_64"
+         download-size="20"
+         install-size="42"
+         version="5.3.0.201606062011"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.macosx"
+         os="macosx"
+         download-size="30"
+         install-size="75"
+         version="5.3.0.201606062011"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.win32"
+         os="win32"
+         download-size="13"
+         install-size="17"
+         version="5.4.1.201606062011"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.win32.x86"
+         os="win32"
+         arch="x86"
+         download-size="292"
+         install-size="592"
+         version="5.4.1.201606062011"
+         fragment="true"/>
+
+   <plugin
+         id="org.eclipse.cdt.core.win32.x86_64"
+         os="win32"
+         arch="x86_64"
+         download-size="360"
+         install-size="757"
+         version="5.4.1.201606062011"
+         fragment="true"/>
+
+   <plugin
+         id="org.eclipse.cdt.native.serial"
+         download-size="99"
+         install-size="272"
+         version="1.0.0.201606062011"
+         unpack="false"/>
+
+</feature>

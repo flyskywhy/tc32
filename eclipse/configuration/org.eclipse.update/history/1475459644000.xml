@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1475459644087" transient="false" version="3.0">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.eclipse.ecf.filetransfer.feature" version="3.13.1.v20160405-1820" url="features/org.eclipse.ecf.filetransfer.feature_3.13.1.v20160405-1820/">
+		</feature>
+		<feature id="org.eclipse.cdt.launch.remote" version="9.0.0.201606062011" url="features/org.eclipse.cdt.launch.remote_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore" version="2.12.0.v20160420-0247" url="features/org.eclipse.emf.ecore_2.12.0.v20160420-0247/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.feature" version="1.3.0.v20160405-1820" url="features/org.eclipse.ecf.core.feature_1.3.0.v20160405-1820/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.core.feature" version="1.3.200.v20160606-1311" url="features/org.eclipse.equinox.p2.core.feature_1.3.200.v20160606-1311/">
+		</feature>
+		<feature id="org.eclipse.epp.mpc" version="1.5.0.v20160608-1804" url="features/org.eclipse.epp.mpc_1.5.0.v20160608-1804/" plugin-identifier="org.eclipse.epp.mpc.ui">
+		</feature>
+		<feature id="org.eclipse.oomph.setup.core" version="1.4.0.v20160530-1355" url="features/org.eclipse.oomph.setup.core_1.4.0.v20160530-1355/">
+		</feature>
+		<feature id="org.eclipse.remote" version="2.1.0.201605242106" url="features/org.eclipse.remote_2.1.0.201605242106/">
+		</feature>
+		<feature id="org.eclipse.egit" version="4.4.0.201606070830-r" url="features/org.eclipse.egit_4.4.0.201606070830-r/">
+		</feature>
+		<feature id="org.eclipse.linuxtools.callgraph.feature" version="5.0.0.201606101757" url="features/org.eclipse.linuxtools.callgraph.feature_5.0.0.201606101757/">
+		</feature>
+		<feature id="org.eclipse.cdt.gnu.debug" version="9.0.0.201606062011" url="features/org.eclipse.cdt.gnu.debug_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.epp.logging.aeri.feature" version="2.0.1.v20160605-1811" url="features/org.eclipse.epp.logging.aeri.feature_2.0.1.v20160605-1811/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.httpclient4.feature" version="3.13.1.v20160405-1820" url="features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.13.1.v20160405-1820/">
+		</feature>
+		<feature id="org.eclipse.help" version="2.2.0.v20160606-1100" url="features/org.eclipse.help_2.2.0.v20160606-1100/" plugin-identifier="org.eclipse.help.base">
+		</feature>
+		<feature id="org.eclipse.linuxtools.profiling" version="5.0.0.201606101757" url="features/org.eclipse.linuxtools.profiling_5.0.0.201606101757/">
+		</feature>
+		<feature id="org.eclipse.cdt.gnu.build" version="9.0.0.201606062011" url="features/org.eclipse.cdt.gnu.build_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.oomph.p2" version="1.4.0.v20160606-0856" url="features/org.eclipse.oomph.p2_1.4.0.v20160606-0856/">
+		</feature>
+		<feature id="org.eclipse.platform" version="4.6.0.v20160606-1342" url="features/org.eclipse.platform_4.6.0.v20160606-1342/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.ssl.feature" version="1.1.0.v20160405-1820" url="features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.0.v20160405-1820/">
+		</feature>
+		<feature id="org.eclipse.oomph.setup" version="1.4.0.v20160606-0856" url="features/org.eclipse.oomph.setup_1.4.0.v20160606-0856/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.discovery.feature" version="1.0.400.v20160504-1450" url="features/org.eclipse.equinox.p2.discovery.feature_1.0.400.v20160504-1450/">
+		</feature>
+		<feature id="org.eclipse.cdt.debug.ui.memory" version="9.0.0.201606062011" url="features/org.eclipse.cdt.debug.ui.memory_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.cdt.autotools" version="9.0.0.201606062011" url="features/org.eclipse.cdt.autotools_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.e4.rcp" version="1.5.0.v20160606-1342" url="features/org.eclipse.e4.rcp_1.5.0.v20160606-1342/">
+		</feature>
+		<feature id="org.eclipse.linuxtools.oprofile.feature" version="5.0.0.201606101757" url="features/org.eclipse.linuxtools.oprofile.feature_5.0.0.201606101757/">
+		</feature>
+		<feature id="org.eclipse.emf.common" version="2.12.0.v20160420-0247" url="features/org.eclipse.emf.common_2.12.0.v20160420-0247/">
+		</feature>
+		<feature id="org.eclipse.cdt.platform" version="9.0.0.201606062011" url="features/org.eclipse.cdt.platform_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.extras.feature" version="1.2.200.v20160606-1311" url="features/org.eclipse.equinox.p2.extras.feature_1.2.200.v20160606-1311/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.ssl.feature" version="1.1.0.v20160405-1820" url="features/org.eclipse.ecf.core.ssl.feature_1.1.0.v20160405-1820/">
+		</feature>
+		<feature id="org.eclipse.linuxtools.gcov" version="5.0.0.201606101757" url="features/org.eclipse.linuxtools.gcov_5.0.0.201606101757/">
+		</feature>
+		<feature id="org.eclipse.cdt.debug.standalone" version="9.0.0.201606062011" url="features/org.eclipse.cdt.debug.standalone_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.rcp" version="4.6.0.v20160606-1342" url="features/org.eclipse.rcp_4.6.0.v20160606-1342/">
+		</feature>
+		<feature id="org.eclipse.linuxtools.perf.feature" version="5.0.0.201606101757" url="features/org.eclipse.linuxtools.perf.feature_5.0.0.201606101757/">
+		</feature>
+		<feature id="org.eclipse.linuxtools.changelog.c" version="5.0.0.201606101757" url="features/org.eclipse.linuxtools.changelog.c_5.0.0.201606101757/">
+		</feature>
+		<feature id="org.eclipse.cdt.gdb" version="9.0.0.201606062011" url="features/org.eclipse.cdt.gdb_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.cdt.native" version="9.0.0.201606062011" url="features/org.eclipse.cdt.native_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.cdt" version="9.0.0.201606062011" url="features/org.eclipse.cdt_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.tracecompass.tmf" version="2.0.0.201606081441" url="features/org.eclipse.tracecompass.tmf_2.0.0.201606081441/">
+		</feature>
+		<feature id="org.eclipse.cdt.gnu.dsf" version="9.0.0.201606062011" url="features/org.eclipse.cdt.gnu.dsf_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.user.ui" version="2.2.200.v20160606-1311" url="features/org.eclipse.equinox.p2.user.ui_2.2.200.v20160606-1311/">
+		</feature>
+		<feature id="org.eclipse.linuxtools.systemtap" version="5.0.0.201606101757" url="features/org.eclipse.linuxtools.systemtap_5.0.0.201606101757/">
+		</feature>
+		<feature id="org.eclipse.epp.package.common.feature" version="4.6.0.20160613-1800" url="features/org.eclipse.epp.package.common.feature_4.6.0.20160613-1800/">
+		</feature>
+		<feature id="org.eclipse.tracecompass.gdbtrace" version="2.0.0.201606081441" url="features/org.eclipse.tracecompass.gdbtrace_2.0.0.201606081441/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature" version="1.1.0.v20160405-1820" url="features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.1.0.v20160405-1820/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.rcp.feature" version="1.2.200.v20160606-1311" url="features/org.eclipse.equinox.p2.rcp.feature_1.2.200.v20160606-1311/">
+		</feature>
+		<feature id="org.eclipse.cdt.build.crossgcc" version="9.0.0.201606062011" url="features/org.eclipse.cdt.build.crossgcc_9.0.0.201606062011/">
+		</feature>
+		<feature id="org.eclipse.linuxtools.cdt.libhover.feature" version="5.0.0.201606101757" url="features/org.eclipse.linuxtools.cdt.libhover.feature_5.0.0.201606101757/">
+		</feature>
+		<feature id="org.eclipse.epp.package.cpp.feature" version="4.6.0.20160613-1800" url="features/org.eclipse.epp.package.cpp.feature_4.6.0.20160613-1800/" plugin-identifier="org.eclipse.epp.package.cpp">
+		</feature>
+		<feature id="org.eclipse.jgit" version="4.4.0.201606070830-r" url="features/org.eclipse.jgit_4.4.0.201606070830-r/">
+		</feature>
+	</site>
+</config>

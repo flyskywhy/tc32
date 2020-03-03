@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.linuxtools.perf.feature"
+      label="%featureName"
+      version="5.0.0.201606101757"
+      provider-name="%provider"
+      os="linux">
+
+   <description url="http://www.eclipse.org/linuxtools/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license>
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.cdt.core" version="5.1.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.debug.core"/>
+      <import plugin="org.eclipse.cdt.launch"/>
+      <import plugin="org.eclipse.debug.core"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.linuxtools.profiling.launch"/>
+      <import plugin="org.eclipse.linuxtools.profiling.ui"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.linuxtools.perf"
+         download-size="134"
+         install-size="269"
+         version="1.2.0.201606101757"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.linuxtools.perf.doc"
+         download-size="826"
+         install-size="929"
+         version="1.0.0.201606101757"
+         unpack="false"/>
+
+</feature>

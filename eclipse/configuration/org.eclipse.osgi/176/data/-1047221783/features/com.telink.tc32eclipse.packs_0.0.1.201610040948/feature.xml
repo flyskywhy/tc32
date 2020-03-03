@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.telink.tc32eclipse.packs"
+      label="%featureName"
+      version="0.0.1.201610040948"
+      provider-name="%providerName"
+      plugin="com.telink.tc32eclipse.packs">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.telink.tc32eclipse.packs"
+         download-size="28"
+         install-size="41"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.packs.core"
+         download-size="32"
+         install-size="55"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.packs.data"
+         download-size="84"
+         install-size="165"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.packs.ui"
+         download-size="173"
+         install-size="269"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.managedbuild.packs"
+         download-size="41"
+         install-size="74"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.debug.packs"
+         download-size="5"
+         install-size="5"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.core2"
+         download-size="88"
+         install-size="157"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+</feature>

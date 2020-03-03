@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.epp.logging.aeri.feature"
+      label="%label"
+      version="2.0.1.v20160605-1811"
+      provider-name="%provider-name">
+
+   <description url="http://www.eclipse.org/epp/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.epp.logging.aeri.ide"
+         download-size="366"
+         install-size="757"
+         version="2.0.1.v20160605-1811"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.epp.logging.aeri.core"
+         download-size="164"
+         install-size="363"
+         version="2.0.1.v20160602-0457"
+         unpack="false"/>
+
+</feature>

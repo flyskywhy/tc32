@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.telink.tc32eclipse.all.feature"
+      label="%featureName"
+      version="0.0.1.201610040948"
+      provider-name="%providerName"
+      plugin="com.telink.tc32eclipse.core">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.telink.tc32eclipse"
+         download-size="5"
+         install-size="4"
+         version="0.0.1.201610040948"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.core"
+         download-size="179"
+         install-size="338"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.templates"
+         download-size="14"
+         install-size="22"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.ui"
+         download-size="238"
+         install-size="451"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+   <plugin
+         id="com.telink.tc32eclipse.core.managedbuildsystem"
+         download-size="26"
+         install-size="82"
+         version="0.0.1.201610040948"
+         unpack="false"/>
+
+</feature>

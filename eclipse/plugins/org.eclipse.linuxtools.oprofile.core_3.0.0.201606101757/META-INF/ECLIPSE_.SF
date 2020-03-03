@@ -1,0 +1,47 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: FkryhOEWXG4Fap8mPkeV3UKC/ZD5u
+ Gaby/BQJFbIasg=
+SHA-256-Digest-Manifest: s7VwvPROt7yDd/Pnn9tvy1Q96nUuVvt8lCcTFnYQygo=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: about.html
+SHA-256-Digest: tEh8bKJRnZg3WieCp7TvZZBNWZe0ab5q5kYbPOYUiUI=
+
+Name: plugin.xml
+SHA-256-Digest: orCFpbf50tNxy60JS1C+VOBPpt4jkL+4BqZ9pTIE4lI=
+
+Name: oprofile-core.jar
+SHA-256-Digest: NDfTRK8SpD2CoKfANKsx8CvCWoLMVGP5RNgAazYICFI=
+
+Name: natives/linux/scripts/org.eclipse.linuxtools.oprofile.policy
+SHA-256-Digest: niXgxLK2VQOQ3Cdr3tW+5TSUKfaCmYZEiDcELts5Afc=
+
+Name: natives/linux/scripts/install-noconsolehelper.sh
+SHA-256-Digest: HHV0y4J7oEAxvotAZNhR9Xx9rCQLasP13GZlbRXX6gs=
+
+Name: natives/linux/scripts/install.sh
+SHA-256-Digest: Cqd6GQ0Z0blhyclbRd4X8oXNOk6JjKchZuFMkGX3AFA=
+
+Name: META-INF/maven/org.eclipse.linuxtools.oprofile/org.eclipse.linux
+ tools.oprofile.core/pom.properties
+SHA-256-Digest: NQIvie9KUHbc0LQ1cJxe8XVd3NOoqXyTKkOVDWDG4GQ=
+
+Name: META-INF/maven/org.eclipse.linuxtools.oprofile/org.eclipse.linux
+ tools.oprofile.core/pom.xml
+SHA-256-Digest: s7v3WQpQS84VPjS3WJ/NWtikO0TZLN0/5TVtoZLNmxk=
+
+Name: op_error_key
+SHA-256-Digest: uxerUB+FBrmtRq+EKD3NQilKkxmxs6HuK37uyngHgd0=
+
+Name: README
+SHA-256-Digest: bfCUHDSg3o9I3Xj2lPQ0OLDdbIGPl+3D5BXv7lN11E4=
+
+Name: natives/linux/scripts/uninstall.sh
+SHA-256-Digest: QpU6aH0s8mAxfOtHn/b9yeCQIU3b32p+9Qg5vse4fs0=
+
+Name: plugin.properties
+SHA-256-Digest: PR4Mt7GvNSUf5IGzzimHvqlYPdJ82bKKhFNnjuZDszs=
+
+Name: natives/linux/scripts/uninstall-noconsolehelper.sh
+SHA-256-Digest: A7IvKFX7cy6vplelVk/0TUV0DkZCs+5GDf+Ybd4thIc=
+
